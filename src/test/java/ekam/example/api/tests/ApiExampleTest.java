@@ -1,4 +1,4 @@
-package ekam.example.api;
+package ekam.example.api.tests;
 
 import com.testvagrant.ekam.testBases.testng.APITest;
 import ekam.example.api.getAddress.GetAddressClient;
@@ -29,6 +29,7 @@ public class ApiExampleTest extends APITest {
         assertEquals(response.getStatus(), "OK");
         assertEquals(response.getCode(), 200);
         assertEquals(response.getData().get(0).getId(), addressId);
+
 
     }
 }
